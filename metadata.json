@@ -1,0 +1,22 @@
+{   
+    "author": "Official",
+    "version": "1.0.1",
+    "resource_url": "https://raw.githubusercontent.com/MemeMeow-Studio/VVfromVideo/main/",
+    "resources":[
+        {
+            "name": "《这就是中国》大全",
+            "relative_path": "all_vvs",
+            "tags": ["vv", "张维为"],
+            "regex": {
+                "pattern": "^\\d+\\^",
+                "replacement": ""
+            }
+        },
+        {
+            "name": "精选v图",
+            "relative_path": "精选表情",
+            "tags": ["vv", "张维为"]
+        }
+    ]
+
+}
