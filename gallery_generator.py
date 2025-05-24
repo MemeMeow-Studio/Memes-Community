@@ -95,21 +95,27 @@ class GalleryGenerator:
         """线程安全的图像下载函数"""
         url, hash_name = args_tuple
         try:
+            # 获取文件扩展名
+            original_ext = os.path.splitext(url.split('/')[-1])[1]
+            if not original_ext:
+                original_ext = '.jpg'  # 默认扩展名
+            
+            # 检查文件是否已存在
+            filename = f"{hash_name}{original_ext}"
+            filepath = os.path.join(self.gallery_folder, filename)
+            
+            if os.path.exists(filepath):
+                with self.download_lock:
+                    print(f"文件已存在，跳过: {filename}")
+                return True
+            
             with self.download_lock:
                 print(f"正在下载图像: {url}")
             
             response = requests.get(url, timeout=30)
             response.raise_for_status()
             
-            # 获取文件扩展名
-            original_ext = os.path.splitext(url.split('/')[-1])[1]
-            if not original_ext:
-                original_ext = '.jpg'  # 默认扩展名
-            
             # 保存文件
-            filename = f"{hash_name}{original_ext}"
-            filepath = os.path.join(self.gallery_folder, filename)
-            
             with open(filepath, 'wb') as f:
                 f.write(response.content)
             

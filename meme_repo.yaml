@@ -1,13 +1,16 @@
 
 # 4946f03b-11ae-4b03-81d5-db74dbf3f853:
 #   name: 《这就是中国》大全
-#   urls: https://raw.githubusercontent.com/MemeMeow-Studio/VVfromVideo/main/all_vvs/manifest.json
-13e30784-6ebf-4c17-9139-aafe95719c61:
-  name: 精选v图
-  urls: https://raw.githubusercontent.com/MemeMeow-Studio/VVfromVideo/main/精选表情/manifest.json
+# #   urls: https://raw.githubusercontent.com/MemeMeow-Studio/VVfromVideo/main/all_vvs/manifest.json
+# 13e30784-6ebf-4c17-9139-aafe95719c61:
+#   name: 精选v图
+#   urls: https://raw.githubusercontent.com/MemeMeow-Studio/VVfromVideo/main/精选表情/manifest.json
 8b9e38fe-c0c4-4e85-abac-30f113da8ab4:
   name: 原神
   urls: https://raw.githubusercontent.com/MemeMeow-Studio/MemesLib-Community/main/原神_BQB/manifest.json
 c23826ff-9b8e-41d8-acc8-88759b90c4dd:
   name: 那年那兔那些事
   urls: https://raw.githubusercontent.com/MemeMeow-Studio/MemesLib-Community/main/那年那兔那些事_BQB/manifest.json
+7871110a-cbee-4fc4-9606-29c18f99770c:
+  name: vv表情包
+  urls: https://raw.githubusercontent.com/MemeMeow-Studio/MemesLib-Community/main/vv表情包/manifest.json

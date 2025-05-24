@@ -2,21 +2,9 @@
   "community_info": {
     "resource_url": "https://github.com/MemeMeow-Studio/Memes-Community/raw/main",
     "update_url": "https://github.com/MemeMeow-Studio/Memes-Community/raw/main/community_manifest.json",
-    "timestamp": 1748097915
+    "timestamp": 1748100245
   },
   "meme_libs": {
-    "13e30784-6ebf-4c17-9139-aafe95719c61": {
-      "name": "精选v图",
-      "version": "1.0.1",
-      "author": "Official",
-      "description": "none",
-      "created_at": "2025-05-19",
-      "timestamp": 1747667458,
-      "tags": [],
-      "url": "https://raw.githubusercontent.com/MemeMeow-Studio/VVfromVideo/main/精选表情",
-      "update_url": "https://raw.githubusercontent.com/MemeMeow-Studio/VVfromVideo/main/精选表情/manifest.json",
-      "uuid": "13e30784-6ebf-4c17-9139-aafe95719c61"
-    },
     "8b9e38fe-c0c4-4e85-abac-30f113da8ab4": {
       "name": "原神",
       "version": "1.0.1",
@@ -40,6 +28,18 @@
       "url": "https://raw.githubusercontent.com/MemeMeow-Studio/MemesLib-Community/main/那年那兔那些事_BQB",
       "update_url": "https://raw.githubusercontent.com/MemeMeow-Studio/MemesLib-Community/main/那年那兔那些事_BQB/manifest.json",
       "uuid": "c23826ff-9b8e-41d8-acc8-88759b90c4dd"
+    },
+    "7871110a-cbee-4fc4-9606-29c18f99770c": {
+      "name": "vv表情包",
+      "version": "1.0.1",
+      "author": "Community",
+      "description": "none",
+      "created_at": "2025-05-24",
+      "timestamp": 1748100083,
+      "tags": [],
+      "url": "https://raw.githubusercontent.com/MemeMeow-Studio/MemesLib-Community/main/vv表情包",
+      "update_url": "https://raw.githubusercontent.com/MemeMeow-Studio/MemesLib-Community/main/vv表情包/manifest.json",
+      "uuid": "7871110a-cbee-4fc4-9606-29c18f99770c"
     }
   }
 }
