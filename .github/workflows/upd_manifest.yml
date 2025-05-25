@@ -1,0 +1,38 @@
+name: Update Manifest
+
+on:
+  push:
+    branches:
+      - main  # 或者你希望监听的其他分支
+    paths-ignore:
+        - '.github/workflows/run_python_and_commit.yml'
+#   schedule:
+#     - cron: '0 4 * * *'  # 每天 UTC 时间 4:00 运行（北京时间 12:00）
+
+jobs:
+  run-and-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.11'  # 指定 Python 版本
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Python script
+        run: python generate_community_json.py  # 替换为你的脚本名称
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --cached --quiet || git commit -m "Automated update from GitHub Actions"
+          git push

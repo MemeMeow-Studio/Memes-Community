@@ -5,6 +5,7 @@ from typing import Dict, List, Any
 from urllib.parse import urljoin
 import concurrent.futures
 import threading
+from loguru import logger
 
 class GalleryGenerator:
     def __init__(self, manifest_path: str = "community_manifest.json", max_workers: int = 5):
@@ -72,7 +73,7 @@ class GalleryGenerator:
             # 获取文件扩展名
             original_ext = os.path.splitext(url.split('/')[-1])[1]
             if not original_ext:
-                original_ext = '.jpg'  # 默认扩展名
+                logger.warning(f"警告：URL {url} 没有有效的文件扩展名")
             
             # 保存文件
             filename = f"{hash_name}{original_ext}"
@@ -98,11 +99,16 @@ class GalleryGenerator:
             # 获取文件扩展名
             original_ext = os.path.splitext(url.split('/')[-1])[1]
             if not original_ext:
-                original_ext = '.jpg'  # 默认扩展名
+                logger.warning(f"警告：URL {url} 没有有效的文件扩展名")
             
             # 检查文件是否已存在
             filename = f"{hash_name}{original_ext}"
             filepath = os.path.join(self.gallery_folder, filename)
+            
+            
+            # DEBUG
+            if '8c5fa' in filename:
+                print()
             
             if os.path.exists(filepath):
                 with self.download_lock:
@@ -153,6 +159,10 @@ class GalleryGenerator:
             if not filepath or not hash_value:
                 print(f"跳过无效文件: {filename}")
                 continue
+            
+            # DEBUG
+            if '8c5fa' in hash_value:
+                print()
             
             # 拼接完整 URL
             image_url = urljoin(base_url + "/", filepath)
