@@ -11,6 +11,8 @@ on:
 
 jobs:
   run-and-commit:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
