@@ -2,7 +2,7 @@
   "community_info": {
     "resource_url": "https://github.com/MemeMeow-Studio/Memes-Community/raw/main",
     "update_url": "https://github.com/MemeMeow-Studio/Memes-Community/raw/main/community_manifest.json",
-    "timestamp": 1748100245
+    "timestamp": 1748165215
   },
   "meme_libs": {
     "8b9e38fe-c0c4-4e85-abac-30f113da8ab4": {
@@ -10,8 +10,8 @@
       "version": "1.0.1",
       "author": "Community",
       "description": "none",
-      "created_at": "2025-05-24",
-      "timestamp": 1748097644,
+      "created_at": "2025-05-25",
+      "timestamp": 1748165055,
       "tags": [],
       "url": "https://raw.githubusercontent.com/MemeMeow-Studio/MemesLib-Community/main/原神_BQB",
       "update_url": "https://raw.githubusercontent.com/MemeMeow-Studio/MemesLib-Community/main/原神_BQB/manifest.json",
@@ -22,8 +22,8 @@
       "version": "1.0.1",
       "author": "Community",
       "description": "none",
-      "created_at": "2025-05-24",
-      "timestamp": 1748097644,
+      "created_at": "2025-05-25",
+      "timestamp": 1748165055,
       "tags": [],
       "url": "https://raw.githubusercontent.com/MemeMeow-Studio/MemesLib-Community/main/那年那兔那些事_BQB",
       "update_url": "https://raw.githubusercontent.com/MemeMeow-Studio/MemesLib-Community/main/那年那兔那些事_BQB/manifest.json",
@@ -34,12 +34,24 @@
       "version": "1.0.1",
       "author": "Community",
       "description": "none",
-      "created_at": "2025-05-24",
-      "timestamp": 1748100083,
+      "created_at": "2025-05-25",
+      "timestamp": 1748165055,
       "tags": [],
       "url": "https://raw.githubusercontent.com/MemeMeow-Studio/MemesLib-Community/main/vv表情包",
       "update_url": "https://raw.githubusercontent.com/MemeMeow-Studio/MemesLib-Community/main/vv表情包/manifest.json",
       "uuid": "7871110a-cbee-4fc4-9606-29c18f99770c"
+    },
+    "4b08b14b-0a74-4477-be7a-3fb46bdfaf5b": {
+      "name": "奶龙表情包",
+      "version": "1.0.1",
+      "author": "Community",
+      "description": "none",
+      "created_at": "2025-05-25",
+      "timestamp": 1748165055,
+      "tags": [],
+      "url": "https://raw.githubusercontent.com/MemeMeow-Studio/MemesLib-Community/main/奶龙",
+      "update_url": "https://raw.githubusercontent.com/MemeMeow-Studio/MemesLib-Community/main/奶龙/manifest.json",
+      "uuid": "4b08b14b-0a74-4477-be7a-3fb46bdfaf5b"
     }
   }
 }
