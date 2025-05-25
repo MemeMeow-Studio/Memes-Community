@@ -5,7 +5,7 @@ on:
     branches:
       - main  # 或者你希望监听的其他分支
     paths-ignore:
-        - '.github/workflows/run_python_and_commit.yml'
+        - '.github/workflows/upd_manifest.yml'
 #   schedule:
 #     - cron: '0 4 * * *'  # 每天 UTC 时间 4:00 运行（北京时间 12:00）
 
